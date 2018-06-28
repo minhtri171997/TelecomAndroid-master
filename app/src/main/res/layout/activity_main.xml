@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        app:srcCompat="@drawable/logo"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="132dp" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:ems="15"
+        android:inputType="none|text|textPersonName|textPostalAddress"
+        android:text="Server Address :"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="265dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        app:srcCompat="@drawable/VGUNormal"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:text="Welcome to IRC"
+        android:textAlignment="center"
+        android:textAppearance="@android:style/TextAppearance.StatusBar.Icon"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="81dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="337dp"
+        android:layout_height="152dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/GroupNormal"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:text="Connect"
+        android:background="@drawable/connect_bar"
+        tools:layout_editor_absoluteX="110dp"
+        tools:layout_editor_absoluteY="341dp" />
+
+</android.support.constraint.ConstraintLayout>
