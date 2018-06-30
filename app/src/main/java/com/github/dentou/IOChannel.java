@@ -21,11 +21,15 @@ public class IOChannel {
 
 
     /* Processing */
-    private IOChannelListener ioChannelListener;
+    private IOChannelListener ioChannelListener = null;
     private Queue<String> inputQueue = new LinkedList<>();
 
-    public void setIoChannelListener(IOChannelListener _ioChannelListener) {
+    public void registerIoChannelListener(IOChannelListener _ioChannelListener) {
         ioChannelListener = _ioChannelListener;
+    }
+
+    public void unRegisterIoChannelListener() {
+        ioChannelListener = null;
     }
 
     public boolean input(String inputString) {
@@ -33,13 +37,6 @@ public class IOChannel {
         return inputQueue.add(inputString);
     }
 
-    public boolean output(String outputString) {
-        if (ioChannelListener == null) {
-            return false;
-        }
-        ioChannelListener.receive(outputString);
-        return true;
-    }
 
     public String getInput() {
         if (inputQueue.size() == 0) {
@@ -50,6 +47,14 @@ public class IOChannel {
 
     public int getInputQueueSize() {
         return inputQueue.size();
+    }
+
+    public boolean output(String outputString) {
+        if (ioChannelListener == null) {
+            return false;
+        }
+        ioChannelListener.receive(outputString);
+        return true;
     }
     /**************/
 }

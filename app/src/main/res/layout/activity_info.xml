@@ -8,76 +8,98 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="113dp"
-        android:layout_height="39dp"
+        android:layout_width="105dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="63dp"
+        android:layout_marginEnd="38dp"
         android:background="@drawable/connect_bar"
         android:text="DISCONNECT"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="465dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/editText_fullname" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/editText_fullname"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
         android:ems="15"
+        android:hint="Full Name"
         android:inputType="none|text|textPersonName|textPostalAddress"
-        android:text="Full Name :"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="385dp" />
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_username" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editText_username"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="0dp"
         android:ems="15"
+        android:hint="Username"
         android:inputType="none|text|textPersonName|textPostalAddress"
-        android:text="Username :"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="325dp" />
+        app:layout_constraintBottom_toTopOf="@+id/editText_fullname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_nickname" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editText_nickname"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="58dp"
+        android:layout_marginBottom="242dp"
         android:ems="15"
+        android:hint="Nickname"
         android:inputType="none|text|textPersonName|textPostalAddress"
-        android:text="Nickname :"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="265dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="110dp"
-        android:layout_height="110dp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="132dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="43dp"
-        android:text="Welcome to IRC"
-        android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.StatusBar.Icon"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="81dp" />
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_nickname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/logo" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="144dp"
-        android:layout_height="56dp"
-        app:srcCompat="@drawable/VGUNormal"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_width="136dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vgunormal" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="108dp"
+        android:layout_width="0dp"
         android:layout_height="39dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginStart="74dp"
         android:background="@drawable/connect_bar"
         android:text="Login"
-        tools:layout_editor_absoluteX="74dp"
-        tools:layout_editor_absoluteY="465dp" />
+        app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="77dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText_nickname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/welcome" />
 </android.support.constraint.ConstraintLayout>

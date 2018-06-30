@@ -25,7 +25,7 @@ public class SocketListener implements Runnable{
                     // TODO: retrieve messages from server
 
                     System.out.println("\nFrom server: " + message.getMessage());
-                    IOChannel.getInstance().output("From server: " + message.getMessage());
+                    IOChannel.getInstance().output(message.getMessage());
                 }
             } catch (IOException e) {
                 e.printStackTrace();

@@ -4,62 +4,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
 
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="77dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/welcome" />
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="110dp"
-        android:layout_height="110dp"
-        app:srcCompat="@drawable/logo"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="132dp" />
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/logo" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="242dp"
         android:ems="15"
+        android:hint="Server Address"
         android:inputType="none|text|textPersonName|textPostalAddress"
-        android:text="Server Address :"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="265dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="144dp"
-        android:layout_height="56dp"
-        app:srcCompat="@drawable/VGUNormal"
-        tools:layout_editor_absoluteX="209dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="43dp"
-        android:text="Welcome to IRC"
-        android:textAlignment="center"
-        android:textAppearance="@android:style/TextAppearance.StatusBar.Icon"
-        android:visibility="visible"
-        tools:layout_editor_absoluteX="57dp"
-        tools:layout_editor_absoluteY="81dp" />
+        android:layout_width="140dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vgunormal" />
 
     <ImageView
         android:id="@+id/imageView6"
-        android:layout_width="337dp"
-        android:layout_height="152dp"
+        android:layout_width="343dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="16dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/GroupNormal"
-        tools:layout_editor_absoluteY="399dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:srcCompat="@drawable/groupnormal" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="42dp"
-        android:text="Connect"
+        android:layout_width="354dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/connect_bar"
-        tools:layout_editor_absoluteX="110dp"
-        tools:layout_editor_absoluteY="341dp" />
+        android:text="Connect"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
 </android.support.constraint.ConstraintLayout>
