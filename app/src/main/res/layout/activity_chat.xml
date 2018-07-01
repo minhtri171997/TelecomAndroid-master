@@ -57,7 +57,6 @@
         android:ems="10"
         android:hint="#Channel"
         android:inputType="text"
-        android:text="Channel"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toStartOf="@+id/button5"
         app:layout_constraintStart_toStartOf="parent"

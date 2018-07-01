@@ -54,6 +54,7 @@ public class chatActivity extends AppCompatActivity implements IOChannelListener
                    // do something here later
                 }else {
                    sendMessage("PRIVMSG " + channel_name + " :" + et_chatstring.getText().toString());
+                   et_chatstring.setText("");
                }
             }
         });
